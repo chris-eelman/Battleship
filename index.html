@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleShip</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="displayGrid('canvas1');displayGrid('canvas2')">
+    <div id="gameBoards">
+        <canvas id="canvas2" width = "275" height="275" onclick="clickSquareAttack(event)"></canvas> <br>
+        <canvas id="canvas1" width = "275" height="275" onmousemove="showHighlights(event)" onclick="clickSquareUser(event)"></canvas>    
+    </div>
+    
+    <div id = "controls">
+        <p id="showLetterNum" style = "font-size: 20px;"></p>
+        <p id ="attackInfo"  style = "font-size: 20px;"></p>
+        <p id ="userInfo"  style = "font-size: 20px;"></p>
+        <button onclick="settingUser = true; this.hidden = true; enableShipSettingButtons();" class="vertButton">Place Ships</button>
+        <button id ="toggleH" onclick="toggleHoriz()" class="vertButton" hidden = true>Place Vertical</button>
+        
+        <button id = 'Carrier' onclick = "shipBeingSet = 'Carrier'; hideShipSettingButtons();" hidden = true class="shipButton">Place Carrier</button>
+        <button id = 'Battleship' onclick = "shipBeingSet = 'Battleship'; hideShipSettingButtons();" hidden = true class="shipButton">Place Battleship</button>
+        <button id = 'Destroyer' onclick = "shipBeingSet = 'Destroyer'; hideShipSettingButtons();" hidden = true class="shipButton">Place Destroyer</button>
+        <button id = 'Submarine' onclick = "shipBeingSet = 'Submarine'; hideShipSettingButtons();" hidden = true class="shipButton">Place Submarine</button>
+        <button id = 'PatrolBoat' onclick = "shipBeingSet = 'PatrolBoat'; hideShipSettingButtons();" hidden = true class="shipButton">Place Patrol Boat</button>
+    </div>
+
+
+</body>
+</html>

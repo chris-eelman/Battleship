@@ -1,0 +1,19 @@
+#canvas1 { border: 5px solid rgb(0, 0, 0);}
+#canvas2 { border: 5px solid rgb(203, 6, 6);}
+
+#lalalala { border: 5px solid rgb(152, 145, 145);}
+
+.shipButton {
+   border: 2px solid rgb(0, 0, 0);
+   background-color: lightblue;
+   font-size: 18px;
+}
+
+.vertButton {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(222, 234, 238);
+    font-size: 18px;
+}
+
+
+
